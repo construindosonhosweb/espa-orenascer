@@ -1,156 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moda Studio - Contato</title>
-   <link rel="stylesheet" href="https://cdn.example.com/style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renascer — Home</title>
+
+  <!-- Fonte e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS local -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="logo">
-            <div class="logo-icon">MS</div>
-            <div class="logo-text">Moda Studio</div>
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="brand-icon">✚</div>
+        <div class="brand-text">
+          <div class="brand-name">Renascer</div>
+          <div class="brand-sub">Loja Oficial</div>
         </div>
-        
-        <ul class="menu">
-            <li class="menu-item"><a href="#"><i class="fas fa-home"></i> Início</a></li>
-            <li class="menu-item"><a href="#"><i class="fas fa-tshirt"></i> Produtos</a></li>
-            <li class="menu-item"><a href="#"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
-            <li class="menu-item"><a href="#"><i class="fas fa-handshake"></i> Parcerias</a></li>
-            <li class="menu-item"><a href="#" class="active"><i class="fas fa-envelope"></i> Contato</a></li>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#" class="nav-item active">Início</a>
+        <a href="#" class="nav-item">Produtos</a>
+        <a href="#" class="nav-item">Sobre Nós</a>
+        <a href="#" class="nav-item">Parcerias</a>
+        <a href="#" class="nav-item">Contato</a>
+      </nav>
+
+      <div class="top-actions">
+        <a class="btn btn-yellow" href="#">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-sub">MODA CRISTÃ COM PROPÓSITO</div>
+      <h1 class="hero-title">Use, Abençoe e Seja Abençoado</h1>
+      <p class="hero-desc">Leve o amor de Jesus através de estampas criativas, modernas e inspiradoras. Cada peça é uma oportunidade de espalhar a palavra de Deus.</p>
+
+      <div class="hero-ctas">
+        <a class="btn btn-yellow" href="#">Ver Produtos <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="newsletter">
+          <input type="email" placeholder="Seu e-mail" aria-label="email">
+          <button class="btn btn-white">OK</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faixa Roxa: Versículo -->
+  <section class="verse-band">
+    <div class="container verse-inner">
+      <div class="verse-icon"><i class="fa-solid fa-book-open"></i></div>
+      <div class="verse-title">VERSÍCULO DO DIA</div>
+      <blockquote class="verse-text">"Tudo posso naquele que me fortalece." <cite>— Filipenses 4:13</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features container">
+    <div class="feature">
+      <div class="feature-icon">♡</div>
+      <h3>Feito com Amor</h3>
+      <p>Cada peça é desenvolvida com carinho e propósito para glorificar a Deus</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">✨</div>
+      <h3>Design Moderno</h3>
+      <p>Estampas criativas que combinam fé e estilo contemporâneo</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">👥</div>
+      <h3>Impacto Real</h3>
+      <p>Vista o propósito e seja instrumento de transformação</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="col">
+        <div class="brand-footer">
+          <div class="brand-icon">✚</div>
+          <div>
+            <strong>Renascer</strong>
+            <div class="small">Loja Oficial</div>
+          </div>
+        </div>
+        <p>Use, abençoe e seja abençoado! Levando o amor de Jesus através de estampas criativas.</p>
+      </div>
+
+      <div class="col">
+        <h4>Links Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Parcerias</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
-        
-        <div class="contact-info">
-            <p><i class="fab fa-whatsapp"></i> (11) 99999-9999</p>
-            <p><i class="fab fa-instagram"></i> @modastudio</p>
-            <p><i class="fas fa-envelope"></i> contato@modastudio.com</p>
-        </div>
-    </div>
-    
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="header">
-            <h1 class="page-title">Perguntas Frequentes</h1>
-            <div class="search-bar">
-                <i class="fas fa-search"></i>
-                <input type="text" placeholder="Pesquisar">
-            </div>
-        </div>
-        
-        <!-- FAQ Section -->
-        <div class="faq-section">
-            <h2 class="section-title">Respostas para as dúvidas mais comuns</h2>
-            
-            <div class="faq-item">
-                <h3 class="faq-question">Como posso fazer um pedido?</h3>
-                <p class="faq-answer">Entre em contato conosco pelo WhatsApp clicando em qualquer produto ou no botão flutuante. Nossa equipe vai te ajudar a finalizar o pedido.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3 class="faq-question">Quais são as formas de pagamento?</h3>
-                <p class="faq-answer">Aceitamos PIX, cartão de crédito e outras formas. Consulte nossa equipe pelo WhatsApp para mais detalhes.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3 class="faq-question">Quanto tempo demora a entrega?</h3>
-                <p class="faq-answer">O prazo varia de acordo com sua região. Após a confirmação do pedido, informamos o prazo estimado de entrega.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3 class="faq-question">Posso personalizar uma estampa?</h3>
-                <p class="faq-answer">Sim! Entre em contato conosco para discutir suas ideias. Criamos estampas personalizadas para igrejas, ministérios e grupos.</p>
-            </div>
-        </div>
-        
-        <!-- Contact CTA -->
-        <div class="contact-cta">
-            <h2 class="cta-title">Ainda tem dúvidas?</h2>
-            <p class="cta-description">Fale conosco pelo WhatsApp e nossa equipe te ajudará</p>
-            <a href="#" class="whatsapp-button">
-                <i class="fab fa-whatsapp"></i> Falar no WhatsApp
-            </a>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <div class="footer-section">
-                <h3 class="footer-title">Renascer</h3>
-                <p>Use, abençoe e seja abençoado! Levando o amor de Jesus através de estampas criativas.</p>
-                <p class="bible-verse">"Porque o salário do pecado é a morte, mas o dom gratuito de Deus é a vida eterna em Cristo Jesus, nosso Senhor." - Romanos 6:23</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3 class="footer-title">Links Rápidos</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Parcerias</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3 class="footer-title">Contato</h3>
-                <ul class="footer-links">
-                    <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> @modastudio</a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i> contato@modastudio.com</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="copyright">
-            © 2025 Moda Studio. Todos os direitos reservados.
-        </div>
-    </div>
-    
-    <!-- Windows Activation Notice -->
-    <div class="windows-notice">
-        Ativar o Windows. Acesse Configurações para ativar o Windows.
+      </div>
+
+      <div class="col">
+        <h4>Contato</h4>
+        <ul class="footer-links">
+          <li><i class="fa-brands fa-whatsapp"></i> WhatsApp</li>
+          <li><i class="fa-brands fa-instagram"></i> @renascer</li>
+          <li><i class="fa-solid fa-envelope"></i> contato@renascerloja.com.br</li>
+        </ul>
+      </div>
     </div>
 
-    <script>
-        // JavaScript para funcionalidades interativas
-        
-        // Adicionar classe ativa ao item de menu clicado
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuItems = document.querySelectorAll('.menu-item a');
-            
-            menuItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    // Remove a classe ativa de todos os itens
-                    menuItems.forEach(i => i.classList.remove('active'));
-                    
-                    // Adiciona a classe ativa ao item clicado
-                    this.classList.add('active');
-                });
-            });
-            
-            // Simular pesquisa
-            const searchInput = document.querySelector('.search-bar input');
-            searchInput.addEventListener('keyup', function(e) {
-                if (e.key === 'Enter') {
-                    const searchTerm = this.value.trim();
-                    if (searchTerm) {
-                        alert(`Pesquisando por: ${searchTerm}`);
-                        this.value = '';
-                    }
-                }
-            });
-            
-            // Botão do WhatsApp
-            const whatsappButton = document.querySelector('.whatsapp-button');
-            whatsappButton.addEventListener('click', function(e) {
-                e.preventDefault();
-                alert('Redirecionando para o WhatsApp...');
-                // Em um cenário real, aqui você redirecionaria para o WhatsApp
-                // window.open('https://wa.me/5511999999999', '_blank');
-            });
-        });
-    </script>
+    <div class="footer-bottom">
+      © 2025 Renascer Loja Oficial. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>
+    // Marca menu ativo simples
+    document.querySelectorAll('.main-nav .nav-item').forEach(item => {
+      item.addEventListener('click', (e) => {
+        document.querySelectorAll('.main-nav .nav-item').forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
