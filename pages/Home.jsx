@@ -81,6 +81,7 @@ export default function Home() {
         <nav className={`w-full px-6 md:px-12 py-6 flex justify-between items-center fixed top-0 z-50 transition-all duration-300 ${
           scrollY > 50 ? "bg-[#f8f7f4]/90 backdrop-blur-md shadow-sm" : "bg-transparent backdrop-blur-sm"
         }`}>
+          */ Traduzido/*
          <h1 className="font-['Space_Grotesk'] text-2xl tracking-tight">moda.studio</h1>
 <div className="hidden md:flex gap-8 font-light text-sm uppercase tracking-wider">
   <a href="#collections" className="hover:opacity-70 transition-opacity">Coleções</a>
