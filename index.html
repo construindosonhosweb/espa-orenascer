@@ -4,86 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Renascer - Preview</title>
-  <style>
-    :root{
-      --purple-1:#6f2fb3;
-      --purple-2:#8f5de8;
-      --accent:#e0b44a;
-      --muted:#f6f5f7;
-      --card-bg:#ffffff;
-      --text:#222;
-      --rounded:18px;
-      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;color:var(--text);background:#fff}
-    header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.95);backdrop-filter:blur(4px);box-shadow:0 1px 0 rgba(0,0,0,0.04)}
-    .nav{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand .logo{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--purple-1),var(--purple-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
-    .cta{background:var(--accent);padding:10px 16px;border-radius:10px;color:#111;font-weight:700}
 
-    /* Hero */
-    .hero{min-height:360px;display:flex;align-items:center;color:#fff;background-image:linear-gradient(180deg,rgba(0,0,0,0.35),rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1520975915512-8b0f9f27b9a2?auto=format&fit=crop&w=1600&q=60');background-size:cover;background-position:center}
-    .container{max-width:1100px;margin:0 auto;padding:36px}
-    .hero-content{max-width:720px}
-    h1{font-size:44px;margin:0 0 12px;line-height:1.02}
-    p.lead{margin:0 0 18px;color:rgba(255,255,255,0.9)}
-    .btn-row{display:flex;gap:12px;margin-top:12px}
-    .btn{background:var(--accent);padding:12px 18px;border-radius:10px;font-weight:700}
-    .search{flex:1;background:#fff;border-radius:10px;padding:10px 14px}
-
-    /* purple band */
-    .purple-band{background:linear-gradient(90deg,var(--purple-1),var(--purple-2));color:#fff;padding:28px 0;text-align:center}
-    .purple-band .verse{max-width:900px;margin:0 auto;font-style:italic}
-
-    /* features */
-    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
-    .feature{background:var(--card-bg);padding:18px;border-radius:14px;text-align:center;box-shadow:0 6px 20px rgba(15,15,15,0.04)}
-
-    /* partnership section */
-    .partners-hero{background:linear-gradient(180deg,rgba(224,180,74,0.12),rgba(224,180,74,0.06));padding:48px 0;margin-top:28px}
-    .partners-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-    .card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(15,15,15,0.04)}
-
-    /* collection */
-    .collection-hero{background:linear-gradient(90deg,var(--purple-1),var(--purple-2));color:#fff;padding:36px 0;margin-top:28px;text-align:center}
-    .filters{display:flex;gap:12px;max-width:1100px;margin:18px auto;padding:0 12px}
-    .filters input,.filters select{padding:12px;border-radius:10px;border:1px solid rgba(0,0,0,0.06);flex:1}
-    .empty{padding:96px;text-align:center;color:#666}
-
-    /* about */
-    .about{padding:48px 12px}
-    .values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
-
-    /* why choose */
-    .why{padding:32px 12px}
-    .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-
-    footer{background:#111;color:#ddd;padding:36px 12px;margin-top:24px}
-    footer .footer-grid{display:flex;gap:24px;max-width:1100px;margin:0 auto}
-
-    /* floating whatsapp */
-    .whatsapp{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;box-shadow:0 8px 30px rgba(37,211,102,0.25);z-index:60}
-
-    /* small screens */
-    @media(max-width:900px){
-      .features{grid-template-columns:repeat(1,1fr)}
-      .partners-grid{grid-template-columns:repeat(1,1fr)}
-      .values{grid-template-columns:repeat(1,1fr)}
-      .why-grid{grid-template-columns:repeat(2,1fr)}
-      h1{font-size:32px}
-    }
-
-    /* simple entrance animations */
-    .fade-up{opacity:0;transform:translateY(12px);animation:fadeUp .9s forwards}
-    .delay-1{animation-delay:.12s}
-    .delay-2{animation-delay:.28s}
-    @keyframes fadeUp{to{opacity:1;transform:none}}
-
-  </style>
+  <!-- LINK PARA O CSS EXTERNO -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
   <header>
     <div class="nav">
       <div class="brand">
@@ -103,9 +30,10 @@
   <section class="hero">
     <div class="container">
       <div class="hero-content fade-up delay-1">
-        <div style="font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#ffd966;margin-bottom:8px">Moda Cristã com propósito</div>
+        <div class="sub">Moda Cristã com propósito</div>
         <h1>Use, Abençoe e Seja Abençoado</h1>
-        <p class="lead">Leve o amor de Jesus através de estampas criativas, modernas e inspiradoras. Cada peça é uma oportunidade de espalhar a palavra de Deus.</p>
+        <p class="lead">Leve o amor de Jesus através de estampas criativas, modernas e inspiradoras.</p>
+
         <div class="btn-row">
           <a class="btn" href="#catalog">Ver Produtos ➜</a>
           <input class="search" placeholder="Buscar produtos..." />
@@ -116,8 +44,8 @@
 
   <section class="purple-band">
     <div class="container">
-      <div style="font-size:12px;opacity:0.9">Versículo do dia</div>
-      <h2 style="margin:8px 0">"Tudo posso naquele que me fortalece."</h2>
+      <div class="versiculo-label">Versículo do dia</div>
+      <h2>"Tudo posso naquele que me fortalece."</h2>
       <div class="verse">— Filipenses 4:13</div>
     </div>
   </section>
@@ -125,69 +53,77 @@
   <div class="container" style="padding:28px 12px">
     <div class="features">
       <div class="feature fade-up delay-1">
-        <div style="font-size:20px;font-weight:700">Feito com Amor</div>
-        <p style="color:#666">Cada peça é desenvolvida com carinho e propósito para glorificar a Deus</p>
+        <div class="ft-title">Feito com Amor</div>
+        <p>Cada peça é desenvolvida com carinho e propósito para glorificar a Deus</p>
       </div>
+
       <div class="feature fade-up delay-2">
-        <div style="font-size:20px;font-weight:700">Design Moderno</div>
-        <p style="color:#666">Estampas criativas que combinam fé e estilo contemporâneo</p>
+        <div class="ft-title">Design Moderno</div>
+        <p>Estampas criativas que combinam fé e estilo contemporâneo</p>
       </div>
+
       <div class="feature fade-up">
-        <div style="font-size:20px;font-weight:700">Impacto Real</div>
-        <p style="color:#666">Vista o propósito e seja instrumento de transformação</p>
+        <div class="ft-title">Impacto Real</div>
+        <p>Vista o propósito e seja instrumento de transformação</p>
       </div>
     </div>
 
+    <!-- PARCEIROS -->
     <section class="partners-hero" id="parceiros">
       <div class="container">
         <h2 style="text-align:center;margin:0 0 12px">Seja um Parceiro</h2>
-        <p style="text-align:center;color:#444;margin:0 0 18px">Junte-se a nós e vista o propósito. 
-          Impacte vidas conosco!</p>
+        <p style="text-align:center;color:#444;margin:0 0 18px">Junte-se a nós e vista o propósito.</p>
+
         <div class="partners-grid">
           <div class="card">
             <h3>Igrejas e Ministérios</h3>
-            <p>Parcerias especiais para Igrejas que desejam fortalecer a identidade da comunidade.</p>
+            <p>Parcerias especiais para Igrejas.</p>
             <ul>
-              <li>Descontos exclusivos para grupos</li>
+              <li>Descontos exclusivos</li>
               <li>Estampas personalizadas</li>
               <li>Entrega prioritária</li>
             </ul>
           </div>
+
           <div class="card">
             <h3>Lojas e Revendedores</h3>
-            <p>Expanda seu negócio com nossa linha de produtos cristãos de qualidade.</p>
+            <p>Expanda seu negócio com nossa linha cristã.</p>
             <ul>
-              <li>Preços de revenda</li>
+              <li>Preços especiais</li>
               <li>Material de divulgação</li>
               <li>Suporte dedicado</li>
             </ul>
           </div>
+
           <div class="card">
             <h3>Influenciadores</h3>
-            <p>Colabore conosco para espalhar mensagens de fé nas redes sociais</p>
+            <p>Colabore conosco.</p>
             <ul>
               <li>Comissões atrativas</li>
               <li>Produtos exclusivos</li>
               <li>Campanhas conjuntas</li>
             </ul>
           </div>
+
           <div class="card">
             <h3>Projetos Sociais</h3>
-            <p>Juntos podemos fazer a diferença na vida de quem mais precisa</p>
+            <p>Faça a diferença com a gente.</p>
             <ul>
               <li>Condições especiais</li>
               <li>Apoio em eventos</li>
-              <li>Visibilidade do projeto</li>
+              <li>Visibilidade</li>
             </ul>
           </div>
         </div>
+
       </div>
     </section>
 
+    <!-- COLEÇÃO -->
     <section class="collection-hero" id="catalog">
       <div class="container">
         <h2>Nossa Coleção</h2>
-        <p>Escolha sua camiseta e espalhe a palavra de Deus com estilo</p>
+        <p>Escolha sua camiseta e espalhe a Palavra de Deus</p>
       </div>
     </section>
 
@@ -198,48 +134,56 @@
     </div>
 
     <div class="empty">
-      <div style="font-size:20px">Nenhum produto encontrado</div>
-      <div style="margin-top:12px;color:#777">Tente ajustar os filtros ou buscar por outros termos</div>
-      <div style="margin-top:18px"><button class="btn" onclick="document.querySelector('.filters input').value='';">Limpar Filtros</button></div>
+      <div class="empty-title">Nenhum produto encontrado</div>
+      <div class="empty-text">Tente ajustar os filtros</div>
+      <div style="margin-top:18px">
+        <button class="btn" onclick="document.querySelector('.filters input').value='';">Limpar Filtros</button>
+      </div>
     </div>
 
+    <!-- ABOUT -->
     <section class="about">
       <div class="container">
         <h2>Nossa História</h2>
-        <p style="max-width:900px;color:#444">A Renascer Loja Oficial nasceu do desejo de unir fé e estilo, criando peças que não apenas vestem o corpo mas também expressam o coração de quem acredita no poder transformador de Jesus Cristo.</p>
+        <p class="about-text">A Renascer nasceu do desejo de unir fé e estilo...</p>
 
         <div class="values">
           <div class="card">
             <h3>Missão</h3>
-            <p>Levar o amor de Jesus através de estampas criativas, inspirando pessoas a viverem sua fé com autenticidade e propósito através da moda cristã.</p>
+            <p>Levar o amor de Jesus através de estampas criativas.</p>
           </div>
+
           <div class="card">
             <h3>Visão</h3>
-            <p>Ser referência em moda cristã no Brasil, transformando vidas através de peças que unem estilo, qualidade e mensagens poderosas de fé e esperança.</p>
-            </div>
+            <p>Ser referência em moda cristã no Brasil.</p>
+          </div>
+
           <div class="card">
             <h3>Valores</h3>
             <ul>
-              <li>Fé em primeiro lugar</li>
-              <li>Excelência e qualidade</li>
-              <li>Criatividade com propósito</li>
-              <li>Impacto transformador</li>
+              <li>Fé</li>
+              <li>Excelência</li>
+              <li>Criatividade</li>
+              <li>Impacto</li>
             </ul>
           </div>
         </div>
+
       </div>
     </section>
 
+    <!-- WHY -->
     <section class="why">
       <div class="container">
-        <h2 style="text-align:center">Por Que Escolher a Renascer?</h2>
-        <p style="text-align:center;color:#666;max-width:900px;margin:8px auto">Mais do que camisetas, oferecemos uma experiência completa</p>
-        <div class="why-grid" style="margin-top:18px">
-          <div class="card"> <strong>Design Exclusivo</strong><p style="color:#666">Estampas únicas desenvolvidas com criatividade e propósito espiritual</p></div>
-          <div class="card"> <strong>Alta Qualidade</strong><p style="color:#666">Tecidos premium e estampas duráveis para acompanhar sua jornada de fé</p></div>
-          <div class="card"> <strong>Feito com Amor</strong><p style="color:#666">Cada peça é produzida com cuidado e oração para abençoar quem usa</p></div>
-          <div class="card"> <strong>Comunidade</strong><p style="color:#666">Faça parte de uma família que espalha o amor de Cristo</p></div>
+        <h2 style="text-align:center">Por que escolher a Renascer?</h2>
+
+        <div class="why-grid">
+          <div class="card"><strong>Design Exclusivo</strong><p>Estampas únicas.</p></div>
+          <div class="card"><strong>Alta Qualidade</strong><p>Tecidos premium.</p></div>
+          <div class="card"><strong>Feito com Amor</strong><p>Produção cuidadosa.</p></div>
+          <div class="card"><strong>Comunidade</strong><p>Família em Cristo.</p></div>
         </div>
+
       </div>
     </section>
 
@@ -247,23 +191,25 @@
 
   <footer>
     <div class="footer-grid">
-      <div style="flex:1">
-        <div style="font-weight:700">Renascer</div>
-        <div style="font-size:13px;color:#bbb;margin-top:6px;max-width:320px">Use, abençoe e seja abençoado! Levando o amor de Jesus através de estampas criativas.</div>
+      <div>
+        <div class="footer-title">Renascer</div>
+        <div class="footer-text">Use, abençoe e seja abençoado!</div>
       </div>
-      <div style="flex:1">
-        <div style="font-weight:700">Links Rápidos</div>
-        <ul style="list-style:none;padding:0;margin-top:8px;color:#bbb">
+
+      <div>
+        <div class="footer-title">Links</div>
+        <ul class="footer-list">
           <li>Início</li>
           <li>Produtos</li>
-          <li>Sobre Nós</li>
+          <li>Sobre</li>
           <li>Parcerias</li>
-          <li>Contato</li>
         </ul>
       </div>
-      <div style="flex:1">
-        <div style="font-weight:700">Contato</div>
-        <div style="margin-top:8px;color:#bbb">WhatsApp: @loja.black_bull<br/>Email: contato@renascerloja.com.br</div>
+
+      <div>
+        <div class="footer-title">Contato</div>
+        <div class="footer-text">WhatsApp: @loja.black_bull</div>
+        <div class="footer-text">Email: contato@renascerloja.com.br</div>
       </div>
     </div>
   </footer>
@@ -271,11 +217,10 @@
   <a class="whatsapp" href="https://wa.me/5511999999999" target="_blank"></a>
 
   <script>
-    // small JS for animations already in CSS and social redirects
     document.querySelectorAll('.fade-up').forEach((el,i)=>{
       el.style.animationDelay = (i*0.08)+'s';
     });
   </script>
+
 </body>
 </html>
-
