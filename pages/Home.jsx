@@ -81,12 +81,14 @@ export default function Home() {
         <nav className={`w-full px-6 md:px-12 py-6 flex justify-between items-center fixed top-0 z-50 transition-all duration-300 ${
           scrollY > 50 ? "bg-[#f8f7f4]/90 backdrop-blur-md shadow-sm" : "bg-transparent backdrop-blur-sm"
         }`}>
-          <h1 className="font-['Space_Grotesk'] text-2xl tracking-tight">moda.studio</h1>
-          <div className="hidden md:flex gap-8 font-light text-sm uppercase tracking-wider">
-            <a href="#collections" className="hover:opacity-70 transition-opacity">Collections</a>
-            <a href="#essentials" className="hover:opacity-70 transition-opacity">Essentials</a>
-            <a href="#sustainability" className="hover:opacity-70 transition-opacity">Sustainability</a>
-            <a href="#about" className="hover:opacity-70 transition-opacity">About</a>
+         <h1 className="font-['Space_Grotesk'] text-2xl tracking-tight">moda.studio</h1>
+<div className="hidden md:flex gap-8 font-light text-sm uppercase tracking-wider">
+  <a href="#collections" className="hover:opacity-70 transition-opacity">Coleções</a>
+  <a href="#essentials" className="hover:opacity-70 transition-opacity">Essenciais</a>
+  <a href="#sustainability" className="hover:opacity-70 transition-opacity">Sustentabilidade</a>
+  <a href="#about" className="hover:opacity-70 transition-opacity">Sobre</a>
+</div>
+
           </div>
           <button className="md:hidden">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
