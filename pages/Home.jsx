@@ -100,7 +100,7 @@ export default function Home() {
         <div 
           className="flex flex-col justify-center items-center h-full px-6 text-center relative bg-cover bg-center"
           style={{ 
-            backgroundImage: "url(https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/b05d02_2292140e-202a-45f6-b4ba-0933d55ca3fe.png)",
+            backgroundImage: "url(https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=1600)",
             backgroundSize: "110%", 
             backgroundPosition: "center 40%" 
           }}
