@@ -101,12 +101,13 @@ export default function Home() {
         </nav>
         
         <div 
-          className="flex flex-col justify-center items-center h-full px-6 text-center relative bg-cover bg-center"
-          style={{ 
-            backgroundImage: "url(https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=1600)",
-            backgroundSize: "110%", 
-            backgroundPosition: "center 40%" 
-          }}
+        className="flex flex-col justify-center items-center h-full px-6 text-center relative bg-cover bg-center"
+style={{ 
+  backgroundImage: "url('/img/pagina.jfif')",
+  backgroundSize: "110%", 
+  backgroundPosition: "center 40%" 
+}}
+
         >
           <div className="absolute inset-0 bg-[#c4b3a3]/20 backdrop-blur-[2px]"></div>
           
