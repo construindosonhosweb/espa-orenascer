@@ -274,4 +274,32 @@ footer{background:#111;color:#ddd;padding:40px 0;margin-top:40px;}
   .choose-grid{grid-template-columns:repeat(2,1fr);}
   .hero-sobre h1{font-size:32px;}
 }
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('img/fundo.jpg'); /* ⬅ Mude aqui */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  /* fundo escuro para leitura */
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5); /* camada escura opcional */
+}
+
+.hero-content {
+  position: relative; /* deixa o texto acima da camada escura */
+  color: white;
+  max-width: 500px;
+}
 
