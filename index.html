@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Renascer - Preview</title>
 
-  <!-- LINK PARA O CSS EXTERNO -->
+  <!-- Importa o CSS externo -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
+  <!-- CABEÇALHO / MENU SUPERIOR -->
   <header>
     <div class="nav">
+
+      <!-- Marca e logo da loja -->
       <div class="brand">
         <div class="logo">+</div>
         <div>
@@ -20,28 +23,41 @@
           <div style="font-size:12px;color:#666">Loja Oficial</div>
         </div>
       </div>
+
+      <!-- Botões da direita: WhatsApp + Menu -->
       <div style="display:flex;gap:14px;align-items:center">
         <a class="cta" href="#" onclick="event.preventDefault();alert('Abrir WhatsApp');">Falar no WhatsApp</a>
         <button style="padding:10px;border-radius:10px;border:0;background:transparent;">☰</button>
       </div>
+
     </div>
   </header>
 
+  <!-- HERO PRINCIPAL DA PÁGINA -->
   <section class="hero">
     <div class="container">
       <div class="hero-content fade-up delay-1">
+
+        <!-- Frase introdutória acima do título -->
         <div class="sub">Moda Cristã com propósito</div>
+
+        <!-- Título principal -->
         <h1>Use, Abençoe e Seja Abençoado</h1>
+
+        <!-- Texto explicativo -->
         <p class="lead">Leve o amor de Jesus através de estampas criativas, modernas e inspiradoras.</p>
 
+        <!-- Linha com botão + busca -->
         <div class="btn-row">
           <a class="btn" href="#catalog">Ver Produtos ➜</a>
           <input class="search" placeholder="Buscar produtos..." />
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- FAIXA ROXA COM O VERSÍCULO DO DIA -->
   <section class="purple-band">
     <div class="container">
       <div class="versiculo-label">Versículo do dia</div>
@@ -51,30 +67,41 @@
   </section>
 
   <div class="container" style="padding:28px 12px">
+
+    <!-- TRÊS BENEFÍCIOS DA MARCA -->
     <div class="features">
+
+      <!-- Benefício 1 -->
       <div class="feature fade-up delay-1">
         <div class="ft-title">Feito com Amor</div>
         <p>Cada peça é desenvolvida com carinho e propósito para glorificar a Deus</p>
       </div>
 
+      <!-- Benefício 2 -->
       <div class="feature fade-up delay-2">
         <div class="ft-title">Design Moderno</div>
         <p>Estampas criativas que combinam fé e estilo contemporâneo</p>
       </div>
 
+      <!-- Benefício 3 -->
       <div class="feature fade-up">
         <div class="ft-title">Impacto Real</div>
         <p>Vista o propósito e seja instrumento de transformação</p>
       </div>
+
     </div>
 
-    <!-- PARCEIROS -->
+    <!-- ÁREA DE PARCERIAS -->
     <section class="partners-hero" id="parceiros">
       <div class="container">
+
         <h2 style="text-align:center;margin:0 0 12px">Seja um Parceiro</h2>
         <p style="text-align:center;color:#444;margin:0 0 18px">Junte-se a nós e vista o propósito.</p>
 
+        <!-- Grid com 4 tipos de parceria -->
         <div class="partners-grid">
+
+          <!-- Card 1 -->
           <div class="card">
             <h3>Igrejas e Ministérios</h3>
             <p>Parcerias especiais para Igrejas.</p>
@@ -85,6 +112,7 @@
             </ul>
           </div>
 
+          <!-- Card 2 -->
           <div class="card">
             <h3>Lojas e Revendedores</h3>
             <p>Expanda seu negócio com nossa linha cristã.</p>
@@ -95,6 +123,7 @@
             </ul>
           </div>
 
+          <!-- Card 3 -->
           <div class="card">
             <h3>Influenciadores</h3>
             <p>Colabore conosco.</p>
@@ -105,6 +134,7 @@
             </ul>
           </div>
 
+          <!-- Card 4 -->
           <div class="card">
             <h3>Projetos Sociais</h3>
             <p>Faça a diferença com a gente.</p>
@@ -114,12 +144,12 @@
               <li>Visibilidade</li>
             </ul>
           </div>
-        </div>
 
+        </div>
       </div>
     </section>
 
-    <!-- COLEÇÃO -->
+    <!-- CABEÇALHO DA COLEÇÃO -->
     <section class="collection-hero" id="catalog">
       <div class="container">
         <h2>Nossa Coleção</h2>
@@ -127,12 +157,14 @@
       </div>
     </section>
 
+    <!-- BARRA DE FILTROS DA LOJA -->
     <div class="filters">
       <input placeholder="Buscar produtos..." />
       <select><option>Todas Categorias</option></select>
       <select><option>Todos</option></select>
     </div>
 
+    <!-- MENSAGEM DE LISTA VAZIA -->
     <div class="empty">
       <div class="empty-title">Nenhum produto encontrado</div>
       <div class="empty-text">Tente ajustar os filtros</div>
@@ -141,12 +173,14 @@
       </div>
     </div>
 
-    <!-- ABOUT -->
+    <!-- SESSÃO SOBRE A EMPRESA -->
     <section class="about">
       <div class="container">
+
         <h2>Nossa História</h2>
         <p class="about-text">A Renascer nasceu do desejo de unir fé e estilo...</p>
 
+        <!-- Missão, Visão e Valores -->
         <div class="values">
           <div class="card">
             <h3>Missão</h3>
@@ -172,16 +206,18 @@
       </div>
     </section>
 
-    <!-- WHY -->
+    <!-- MOTIVOS PARA ESCOLHER A LOJA -->
     <section class="why">
       <div class="container">
         <h2 style="text-align:center">Por que escolher a Renascer?</h2>
 
         <div class="why-grid">
+
           <div class="card"><strong>Design Exclusivo</strong><p>Estampas únicas.</p></div>
           <div class="card"><strong>Alta Qualidade</strong><p>Tecidos premium.</p></div>
           <div class="card"><strong>Feito com Amor</strong><p>Produção cuidadosa.</p></div>
           <div class="card"><strong>Comunidade</strong><p>Família em Cristo.</p></div>
+
         </div>
 
       </div>
@@ -189,8 +225,10 @@
 
   </div>
 
+  <!-- RODAPÉ -->
   <footer>
     <div class="footer-grid">
+
       <div>
         <div class="footer-title">Renascer</div>
         <div class="footer-text">Use, abençoe e seja abençoado!</div>
@@ -211,11 +249,14 @@
         <div class="footer-text">WhatsApp: @loja.black_bull</div>
         <div class="footer-text">Email: contato@renascerloja.com.br</div>
       </div>
+
     </div>
   </footer>
 
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
   <a class="whatsapp" href="https://wa.me/5511999999999" target="_blank"></a>
 
+  <!-- SCRIPT PARA LER OS ELEMENTOS COM ANIMAÇÃO -->
   <script>
     document.querySelectorAll('.fade-up').forEach((el,i)=>{
       el.style.animationDelay = (i*0.08)+'s';
