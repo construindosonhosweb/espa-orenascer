@@ -16,7 +16,7 @@
 </head>
 
 <body>
-
+ <script src="js/menu.js"></script>
 
   <div class="hero-bg"></div>
 
@@ -39,6 +39,31 @@
       <div style="display:flex;gap:14px;align-items:center">
         <a class="cta" href="#" onclick="event.preventDefault();alert('Abrir WhatsApp');">Falar no WhatsApp</a>
         <button style="padding:10px;border-radius:10px;border:0;background:transparent;">☰</button>
+         <!-- Botão do Menu -->
+  <button id="btnMenu" style="padding:10px;border-radius:10px;border:0;background:transparent;font-size:24px;cursor:pointer;">
+    ☰
+  </button>
+
+  <!-- MENU DROPDOWN -->
+  <div id="menuDropdown" style="
+      display:none;
+      position:absolute;
+      top:45px;
+      right:0;
+      background:white;
+      border-radius:10px;
+      padding:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+      min-width:160px;
+      z-index:100;
+    ">
+    <a href="#" style="display:block;padding:10px;border-bottom:1px solid #eee;text-decoration:none;color:#333;">Link 1</a>
+    <a href="#" style="display:block;padding:10px;border-bottom:1px solid #eee;text-decoration:none;color:#333;">Link 2</a>
+    <a href="#" style="display:block;padding:10px;border-bottom:1px solid #eee;text-decoration:none;color:#333;">Link 3</a>
+    <a href="#" style="display:block;padding:10px;border-bottom:1px solid #eee;text-decoration:none;color:#333;">Link 4</a>
+    <a href="#" style="display:block;padding:10px;text-decoration:none;color:#333;">Link 5</a>
+  </div>
+</div>
       </div>
 
     </div>
@@ -73,7 +98,7 @@
 
      <div class="btn-row">
        <!-- Linha com botão + busca -->
-  <a class="btn" href="SobreNós.html">Ver Produtos ➜</a>
+  <a class="btn" href="#">Ver Produtos ➜</a>
   <input class="search" placeholder="Buscar produtos..." />
 </div>
 
